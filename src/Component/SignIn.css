@@ -1,0 +1,160 @@
+/* Container */
+.signin-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Left Section (Form) */
+  .signin-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 60px;
+  }
+  
+  /* Logo */
+  .logo-container {
+    margin-bottom: 30px;
+  }
+  
+  .logo {
+    max-width: 150px;
+    height: auto;
+  }
+  
+  /* Form */
+  .form-container {
+    width: 100%;
+    max-width: 600px;
+    
+    padding: 40px;
+    border-radius: 8px;
+    
+    height:30vh;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+  }
+  
+  .input-group input:focus {
+    border-color: #007bff;
+  }
+  
+  .signin-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .signin-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Social Sign-In */
+  .social-signin-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+    width:500px;
+    margin-left: 35px;
+    justify-content: space-between;
+  }
+  
+  .social-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 400px;
+    padding: 12px;
+    margin: 10px 0;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .social-button .fab {
+    margin-right: 10px;
+  }
+  
+  .social-button:first-child {
+    background-color: #db4437; /* Google red */
+  }
+  
+  .social-button:last-child {
+    background-color: #3b5998; /* Facebook blue */
+  }
+  
+  .social-button:hover {
+    opacity: 0.9;
+  }
+  
+  /* Right Section (Image) */
+  .signin-right {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .side-image {
+    max-width: 100%;
+    height: 90vh;
+     
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .signin-container {
+      flex-direction: column;
+      padding: 20px;
+    }
+  
+    .signin-left, .signin-right {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .side-image {
+      margin-top: 20px;
+      max-width: 80%;
+    }
+  }
+  

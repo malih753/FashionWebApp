@@ -3,6 +3,7 @@ import Header from '../Component/Header'
 import Main from '../Component/Main'
 import Fashion from '../Component/Fashion'
 import SwiperCard from '../Component/Swiper'
+import Footer from '../Component/Footer'
 
 const Home = () => {
     return (
@@ -11,6 +12,7 @@ const Home = () => {
             <Main/>
             <Fashion/>
             <SwiperCard/>
+            <Footer/>
         </>
     )
 }

@@ -1,36 +1,21 @@
-import { Box, Button, Stack, Typography } from '@mui/material';
 import React from 'react';
-import main from '../Images/main.webp';
+import main from '../Images/main.webp'; // Ensure the image path is correct
+import './Main.css';
 
 const Main = () => {
     return (
-        <Stack sx={{position:'relative'}}>
-            <Box
-                component="img"
-                src={main}
-                alt={''}
-                width={'100%'}
-                sx={{
-                    width: { sm: '100%', xs: '100%' },
-                    height: { sm: '120vh', xs: '45vh' },
-                    objectFit: 'cover',
-                }}
-            />
-            <Stack sx={{position:'absolute',top:'20%',right:'-16%',transform:'translate(-50%,-50%)'}}>
-                <Typography sx={{color:'orange',fontSize:'65px',fontWeight:'bold'}}>
-                Fashion Sale
-                </Typography>
-                <Typography sx={{color:'white',fontSize:'65px'}}>Minimal Menz Style</Typography>
-                <Typography sx={{color:'white' ,fontSize:'22px',width:'750px'}}>
-                Consectetur adipisicing elit. Laborum fuga incidunt laboriosam voluptas iure, delectus dignissimos facilis neque nulla earum.
-                </Typography>
-                <Button sx={{backgroundColor:'orange',color:'white',marginTop:'13px',width:'230px'}}>
-                    Shop Now
-                </Button>
-            </Stack>
-        </Stack>
-
+        <div className="main-container">
+            <img src={main} alt="Fashion Sale" className="main-image" />
+            <div className="main-content">
+                <h1 className="sale-text">Fashion Sale</h1>
+                <h2 className="style-text">Minimal Menz Style</h2>
+                <p className="description-text">
+                    Consectetur adipisicing elit. Laborum fuga incidunt laboriosam voluptas iure, delectus dignissimos facilis neque nulla earum.
+                </p>
+                <button className="shop-now-button">Shop Now</button>
+            </div>
+        </div>
     );
-}
+};
 
 export default Main;
